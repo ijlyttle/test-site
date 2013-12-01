@@ -55,7 +55,7 @@ rmd2md <- function(in_path, out_path = tempfile(fileext = ".md")) {
 
 # Convert a md file to html using pandoc
 md2html <- function(in_path, out_path = tempfile(fileext = ".html")) {
-  cmd <- paste0("pandoc -f markdown -t html -o ", out_path, " ", in_path)
+  cmd <- paste0("pandoc -s --mathjax -f markdown -t html -o ", out_path, " ", in_path)
   system(cmd)
   
   out_path

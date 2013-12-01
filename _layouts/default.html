@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/highlight.css" rel="stylesheet">
+    <link href="{{ page.root  }}assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ page.root  }}assets/css/highlight.css" rel="stylesheet">
     
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' 
       rel='stylesheet' type='text/css'>
@@ -45,15 +45,19 @@
           <a href="http://yihui.name/knitr/">knitr</a>, and 
           <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>. Source 
           available on <a href="https://github.com/ijlyttle/test-site/">github</a>.
-          The archtitecture and construction of this site is derived from 
-          Hadley Wickham's <a href="http://adv-r.had.co.nz">Advanced R</a>.
+          Archtitecture and construction derived from 
+          Hadley Wickham's <a href="http://adv-r.had.co.nz">Advanced R</a> website.
         </p>
       </div>
 
     </div> <!-- /container -->
 
   <script src="//code.jquery.com/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/toc.js"></script>
+  <script src="{{ page.root  }}assets/js/bootstrap.min.js"></script>
+  <script src="{{ page.root  }}assets/js/toc.js"></script>
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>  
+
   </body>
 </html>
