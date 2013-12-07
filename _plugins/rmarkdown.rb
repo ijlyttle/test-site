@@ -5,6 +5,10 @@ module Jekyll
     safe :false
     priority :high
 
+    def setup
+      stdout.puts("hello world")
+    end
+
     def matches(ext)
       ext =~ /^\.(rmd|rmarkdown)$/i
     end
